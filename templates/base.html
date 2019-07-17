@@ -1,0 +1,207 @@
+{% load static %}
+<html lang="en">
+<head>
+
+</head>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+{% block head %}
+    <meta charset="UTF-8">
+    <title></title>
+    {% endblock %}
+
+<link rel="icon" href="img/core-img/favicon.ico">
+
+<link rel="stylesheet"  type="text/css" href=" /events_attendance/base/style.css">
+</head>
+<body>
+
+<div class="preloader d-flex align-items-center justify-content-center">
+<div class="circle-preloader">
+<img src="img/core-img/logo.png" alt="">
+<div class="foode-preloader">
+<span></span>
+</div>
+</div>
+</div>
+<header class="header-area">
+
+<div class="top-header">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="top-header-content d-flex align-items-center justify-content-between">
+
+<div class="search-form">
+<form action="#" method="get">
+<input type="search" name="search" class="form-control" placeholder="Search and hit enter...">
+<button type="submit"><i class="fa fa-search"></i></button>
+</form>
+</div>
+
+<div class="top-social-info">
+<a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+<a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+<a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+<a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+<a href="#"><i class="fa fa-rss" aria-hidden="true"></i></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="logo-area text-center">
+<div class="container">
+<div class="row">
+<div class="col-12">
+
+<a href="#" class="nav-brand"><img src="#" alt=""></a>
+</div>
+</div>
+</div>
+</div>
+
+<div class="foode-main-menu">
+<div class="classy-nav-container breakpoint-off">
+<div class="container">
+
+<nav class="classy-navbar" id="foodeNav">
+
+<a href="#" class="nav-brand"><img src="#" alt=""></a>
+
+<div class="classy-navbar-toggler">
+<span class="navbarToggler"><span></span><span></span><span></span></span>
+</div>
+
+<div class="classy-menu">
+
+<div class="classycloseIcon">
+<div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+</div>
+
+ <div class="classynav">
+<ul>
+<li><a href="#">Home</a></li>
+<li><a href="#">Pages</a>
+<ul class="dropdown">
+<li><a href="index.html">Home</a></li>
+<li><a href="archive-blog.html">Archive Blog</a></li>
+<li><a href="single-post.html">Single Post</a></li>
+<li><a href="about-us.html">About</a></li>
+<li><a href="contact.html">Contact</a></li>
+<li><a href="typography.html">Typography</a></li>
+</ul>
+</li>
+<li><a href="#">Catagories</a>
+<div class="megamenu">
+<ul class="single-mega cn-col-4">
+<li><a href="#">- Features</a></li>
+<li><a href="#">- Food</a></li>
+<li><a href="#">- Travel</a></li>
+<li><a href="#">- Recipe</a></li>
+<li><a href="#">- Bread</a></li>
+<li><a href="#">- Breakfast</a></li>
+<li><a href="#">- Meat</a></li>
+<li><a href="#">- Fastfood</a></li>
+<li><a href="#">- Salad</a></li>
+<li><a href="#">- Soup</a></li>
+</ul>
+<ul class="single-mega cn-col-4">
+<li><a href="#">- Features</a></li>
+<li><a href="#">- Food</a></li>
+<li><a href="#">- Travel</a></li>
+<li><a href="#">- Recipe</a></li>
+<li><a href="#">- Bread</a></li>
+<li><a href="#">- Breakfast</a></li>
+<li><a href="#">- Meat</a></li>
+<li><a href="#">- Fastfood</a></li>
+<li><a href="#">- Salad</a></li>
+<li><a href="#">- Soup</a></li>
+</ul>
+<ul class="single-mega cn-col-4">
+<li><a href="#">- Features</a></li>
+<li><a href="#">- Food</a></li>
+<li><a href="#">- Travel</a></li>
+<li><a href="#">- Recipe</a></li>
+<li><a href="#">- Bread</a></li>
+<li><a href="#">- Breakfast</a></li>
+<li><a href="#">- Meat</a></li>
+<li><a href="#">- Fastfood</a></li>
+<li><a href="#">- Salad</a></li>
+<li><a href="#">- Soup</a></li>
+</ul>
+<ul class="single-mega cn-col-4">
+<li><a href="#">- Features</a></li>
+<li><a href="#">- Food</a></li>
+<li><a href="#">- Travel</a></li>
+<li><a href="#">- Recipe</a></li>
+<li><a href="#">- Bread</a></li>
+<li><a href="#">- Breakfast</a></li>
+<li><a href="#">- Meat</a></li>
+<li><a href="#">- Fastfood</a></li>
+<li><a href="#">- Salad</a></li>
+<li><a href="#">- Soup</a></li>
+</ul>
+</div>
+</li>
+<li><a href="#">Travel</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Contact</a></li>
+</ul>
+</div>
+
+</div>
+</nav>
+</div>
+</div>
+</div>
+</header>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top ">
+        <div class="container">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse">
+                <a class="navbar-brand mr-4" href="{% url 'events_attendance:home' %}">KSAU-HS events</a>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggle">
+
+                <div class="navbar-nav">
+
+                    {% if user.is_authenticated %}
+                        <a class="nav-item nav-link" href="{% url 'events_attendance:new-event'  %}"> new event </a>
+                        <a class="nav-item nav-link" href="{% url 'profile' %}"> Profile </a>
+                        <a class="nav-item nav-link" href="{% url 'logout' %}"> Logout </a>
+                    {% else %}
+                        <a class="nav-item nav-link" href="{% url 'login' %}"> Login </a>
+                        <a class="nav-item nav-link" href="{% url 'register' %}"> Register </a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class=" warpper">
+
+     <div class="content">
+     {% if messages %}
+         {% for message in messages %}
+         <div class="alert alert-{{ message.tags}}">
+             {{ message  }}
+
+         </div>
+         {% endfor %}
+     {% endif %}
+
+     </div>
+    </div>
+    {% block content %}
+
+    {% endblock %}
+</body>
+</html>

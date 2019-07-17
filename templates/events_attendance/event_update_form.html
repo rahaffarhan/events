@@ -1,0 +1,26 @@
+{% extends 'base.html'%}
+{% load crispy_forms_tags%}
+{% block content %}
+<h1> updated </h1>
+<form action='.' method="POST">{% csrf_token %}
+    {{  event_form|crispy }}
+    {{ form.as_p }}
+    <input type="submit" value="Update" />
+</form>
+{% endblock %}
+
+
+    <div class="content-section">
+
+        <div class="media-body">
+          <h2 class="account-heading">{{ event.event_name }}</h2>
+        </div>
+    </div>
+      <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+             {{  event_form|crispy }}
+        <div class="form-group">
+            <button class="btn btn-outline-info" type="submit"> update </button>
+        </div>
+      </form>
+    </div>

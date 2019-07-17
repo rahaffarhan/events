@@ -1,0 +1,21 @@
+{% extends 'base.html'%}
+{% block content %}
+<h1> welcome to homepage!</h1>
+
+<h1><a href="{% url 'events_attendance:events' %}"> Event List</a> </h1>
+
+{% endblock %}
+
+ <div class="events">
+         {% for event in events %}
+             <div class="event">
+             <h2><a href="{% url 'event-detail' event.id%}">{{ event.event_name }}</a></h2>
+
+             </div>
+         {% endfor %}
+         {% for user in users %}
+         <div class="user">
+             {{user.username}}
+         </div>
+         {% endfor %}
+     </div>

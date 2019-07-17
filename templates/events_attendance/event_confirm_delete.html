@@ -1,0 +1,12 @@
+{% extends 'base.html'%}
+{% block content %}
+<form method="POST">{% csrf_token %}
+    <h2>Are you sure you want to delete "{{ object.event_name }}"?</h2>
+    <input type="submit" value="yes" />
+    <a href="{% url 'events_attendance:event-detail' object.id " > no </a>
+</form>
+{% endblock %}
+
+
+
+
